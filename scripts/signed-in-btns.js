@@ -1,4 +1,75 @@
 // buttons need to be at the bottom of the HTML page.
+document.querySelector(".emergancy").onclick = function(){
+    alert("This will call your pet's primary doctor's office \nor the doctor themselves.");
+}
+
+document.querySelector(".requestAppointments").onclick = function(){
+    
+    let darkBackground = document.querySelector(".darkenBackground");
+    let requestAppointmentsPopUp = document.querySelector(".requestAppointmentsPopUp");
+    let goBack = document.querySelector(".goBack");
+
+    darkBackground.style.display = 'block';
+    requestAppointmentsPopUp.style.display = 'block';
+
+    goBack.onclick = function(){
+        darkBackground.style.display = 'none';
+        requestAppointmentsPopUp.style.display = 'none';
+    }
+   
+
+}
+document.querySelector(".requestRefill").onclick = function(){
+    
+    let darkBackground = document.querySelector(".darkenBackground");
+    let requestRefillPopUp = document.querySelector(".requestRefillPopUp");
+    let goBack2 = document.querySelector(".goBack2");
+
+    darkBackground.style.display = 'block';
+    requestRefillPopUp.style.display = 'block';
+
+    goBack2.onclick = function(){
+        darkBackground.style.display = 'none';
+        requestRefillPopUp.style.display = 'none';
+    }
+   
+
+}
+document.querySelector(".past").onclick = function(){
+    
+    let darkBackground = document.querySelector(".darkenBackground");
+    let pastAppointmentsPopUp = document.querySelector(".pastAppointmentsPopUp");
+    let goBack3 = document.querySelector(".goBack3");
+
+    darkBackground.style.display = 'block';
+    pastAppointmentsPopUp.style.display = 'block';
+
+    goBack3.onclick = function(){
+        darkBackground.style.display = 'none';
+        pastAppointmentsPopUp.style.display = 'none';
+    }
+   
+
+}
+
+document.querySelector(".account").onclick = function(){
+    
+    let darkBackground = document.querySelector(".darkenBackground");
+    let accountPopUp = document.querySelector(".accountPopUp");
+    let goBack4 = document.querySelector(".goBack4");
+
+    darkBackground.style.display = 'block';
+    accountPopUp.style.display = 'block';
+
+    goBack4.onclick = function(){
+        console.log("clicking");
+        darkBackground.style.display = 'none';
+        accountPopUp.style.display = 'none';
+    }
+   
+
+}
+
 document.querySelector(".logout").onclick = function(){
     
     let darkBackground = document.querySelector(".darkenBackground");
