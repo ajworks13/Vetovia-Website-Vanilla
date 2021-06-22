@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/sign-up-styling/sign-up-styles.css">
+
+    <title>Sign in</title>
+
+    <script type="text/javascript" src="/scripts/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="clinicName">
+            <input type="text" class="clinic" id="clinic" name="clinicN" placeholder="Clinic Name">
+        </div>
+
+        <div class="clientLastName">
+            <input type="text" class="familyName" id="familyName" name="familyNameN" placeholder="Family Name">
+        </div>
+
+        <div class="petName">
+            <input type="text" class="pet" id="petsName" placeholder="Pet's Name">
+        </div>
+
+        <div class="policyNumDiv">
+            <input type="text" class="policyNum" id="policyNum" placeholder="Policy #">
+        </div>
+
+        <div class="microchipDiv">
+            <input type="text" class="microchipNum" id="microchipNum" placeholder="Micro-chip # - OPTIONAL">
+        </div>
+
+        <div class="tagIdDiv">
+            <input type="text" class="tagId" id="tagId" placeholder="Tag ID - OPTIONAL">
+        </div>
+
+        <!-- <button class="createAccount">Create</button> -->
+        <input type="submit" class="createAccountButton" onclick="accountCreated()" value="Create">
+
+        <p>Already have an account?</p>
+        <a href="/sign-in/sign-in.html" class="signBackIn">Sign In</a>
+
+
+    </div>
+</body>
+</html>

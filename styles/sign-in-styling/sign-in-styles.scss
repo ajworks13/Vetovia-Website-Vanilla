@@ -1,0 +1,96 @@
+@import '../variables';
+
+
+// MOBILE
+@media screen and (max-width: 480px){
+    body{
+        background-color: $primary-blue;
+    }
+
+    .container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        header{
+            color:white;
+            margin:0 auto;
+            font-size: 30px;
+            margin-top: 100px;
+        }
+        form{
+            width: 75%;
+        }
+        .emailInputContainer{
+            margin-top: 40px;
+            width: 100%;
+        }
+        .email{
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            height: 30px;
+            background-color: transparent;
+            border-bottom-color: black;
+            border-bottom-width: 3px;
+            border-top-width: 0px;
+            border-right-width: 0px;
+            border-left-width: 0px;
+        }
+
+        .passwordInputContainer{
+            margin-top: 40px;
+            width: 100%;
+        }
+        .password{
+            @extend .email;
+        }
+        .signInButton{
+            display: block;
+            width: 50%;
+            height: 40px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        .links{
+            display: flex;
+            width: 100%;
+            margin-top: 60px;
+            flex-direction: column;
+            font-weight: bold;
+
+            p{
+                margin-bottom: -2px;
+                font-style: italic;
+                font-weight:400;
+            }
+        }
+
+    }
+
+
+}
+
+
+
+
+
+
+
+// TABLET's and MOBILE's
+@media screen 
+    and (min-width: 481px)
+    and (max-width: 768px){
+    body{
+        background-color: red;
+    }
+}
+
+// DESKTOP's
+@media screen 
+    and (min-width: 769px){
+    body{
+        background-color: green;
+    }
+}

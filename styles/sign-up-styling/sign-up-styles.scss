@@ -1,0 +1,76 @@
+@import '../variables';
+
+
+// MOBILE
+@media screen and (max-width: 480px){
+    body{
+        background-color: $primary-blue;
+    }
+
+    .container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+        .clinicName{
+            margin-top: 50px;
+            width: 100%;
+        }
+        .clientLastName, .petName, .lastFour, .policyNumDiv, .microchipDiv, .tagIdDiv{
+            @extend .clinicName;
+        }
+        
+        .clinic{
+            display: block;
+            margin: 0 auto;
+            width: 75%;
+            height: 30px;
+            background-color: transparent;
+            border-bottom-color: black;
+            border-bottom-width: 3px;
+            border-top-width: 0px;
+            border-right-width: 0px;
+            border-left-width: 0px;
+        }
+        .familyName, .pet, .fourDigits, .policyNum, .microchipNum, .tagId{
+            @extend .clinic;
+        }
+        .createAccount{
+            width: 50%;
+            height: 40px;
+            margin-top: 20px;
+        }
+        p{
+            margin-top: 50px;
+        }
+       
+
+       
+
+    }
+
+
+}
+
+
+
+
+
+
+
+// TABLET's and MOBILE's
+@media screen 
+    and (min-width: 481px)
+    and (max-width: 768px){
+    body{
+        background-color: red;
+    }
+}
+
+// DESKTOP's
+@media screen 
+    and (min-width: 769px){
+    body{
+        background-color: green;
+    }
+}

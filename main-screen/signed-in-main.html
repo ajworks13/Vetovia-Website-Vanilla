@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome !</title>
+    
+    <link rel="stylesheet" href="/styles/signed-in-main-styling/signed-in-main.css"/>
+</head>
+<body>
+    <script type="text/javascript" src="/scripts/signed-in.js"></script>
+
+    <div class="container">
+        
+        <div class="profile">
+            <div class="familyBackground">
+                <img src="/imgs/familyPic.jpeg" alt="">
+                <div class="petBackground">
+                    <img src="/imgs/petPic.jpeg" alt="">
+                </div>
+                <div class="petsName"><span id="petsName">-Name-</span></div>
+            </div>
+
+            <div class="mainInfo">
+                <span>Family Name:</span> <span class="famName" id="famName">_______</span>
+                <span>Tag ID:</span> <span class="tagId" id="tagId">_______</span>
+                <span>Microchip #:</span> <span class="microchipNum" id="microchipNum">_______</span>
+                <span>Policy #:</span> <span class="policyNum" id="policyNum">_______</span>
+            </div>
+
+            <div class="subInfo">
+                <!-- split these into 2 columns (CHECK)-->
+                <div class="leftside">
+                    <div class="one"> <span>Height:</span> <input type="text" class="height"> </div>
+                    <div class="two"><span>Weight:</span> <input type="text" class="weight"></div>
+                    <div class="three"><span>fur-color(s):</span> <input type="text" class="furColors"></div>
+                    <div class="four"><span>Length:</span> <input type="text" class="length"></div>
+                </div>
+
+                <div class="rightside">
+                    <div class="five"><span>Collar-Color:</span> <input type="text" class="collarColor"></div>
+                    <div class="six">
+                        <span>Gender:</span> 
+                        <select name="dropdown" id="chooseGender">
+                            <option value="">'choose'</option>
+                            <option value="boy">Boy</option>
+                            <option value="girl">Girl</option>
+                        </select>
+                    
+                    </div>
+                    <div class="seven"><span>Breed:</span> <input type="text" class="breed"></div>
+                </div>
+            </div>
+
+            <div class="buttonsAndLogo">
+                <button class="requestAppointment">Request Appointment</button>
+                <button class="emergancy">Emergancy Call</button>
+                <button class="requestRefill">Request Refill</button>
+                <button class="past">Past Appointments</button>
+                <button class="logout">Log out</button>
+                <button class="account">Account</button>
+                <div class="image">
+                    <img src="/imgs/hospitalLogo.jpg" alt="Hospital Logo">
+                    <div><p id="location"></p></div>
+                </div>
+            </div>
+            
+
+            <!--                   BELOW IS WHERE YOU LOG OUT                     -->
+
+            <div class="darkenBackground"></div>
+            <div class="logoutPopup">
+                <p>Are you sure you want to LOG OUT?</p>
+                <button class="yes">
+                    <a href="/sign-in/sign-in.html" class="signUp">Yes</a>
+                </button>
+                
+                <!-- 'NO' is being validated through JS -->
+                <button class="no">No</button>
+            </div>
+        </div>
+    </div>
+
+
+    Email: <span id="email-result"></span>
+    Password: <span id="password-result"></span>
+
+    <script type="text/javascript" src="/scripts/signed-in-btns.js"></script>
+</body>
+</html>

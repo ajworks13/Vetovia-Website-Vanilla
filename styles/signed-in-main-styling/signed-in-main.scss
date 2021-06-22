@@ -1,0 +1,209 @@
+@import '../variables';
+
+
+// MOBILE
+@media screen and (max-width: 480px){
+    body{
+        background-color: $primary-blue;
+    }
+
+    .container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        .profile{
+            height: 900px;
+            width: 95%;
+            background-color: $primary-green;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+            .familyBackground{
+                width: 98%;
+                margin: 0 auto;
+                height:150px;
+                background-color:$empty-gray;
+                box-shadow: 0px 0px 10px 2px black;
+
+                img{
+                    height: 150px;
+                    width: 100%;
+                }
+     
+                .petBackground{
+                    position: absolute;
+                    margin-top: -100px;
+                    height: 80px;
+                    width: 80px;
+                    background-color: green;
+
+                    img{
+                        height: 80px;
+                        width: 80px;
+                    }
+                }
+                .petsName{
+                    position: relative;
+                    margin-top: -50px;
+                    height: 100px;
+                }
+                
+
+                span{
+                    color: white;
+                    text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+                    margin-left: 100px;
+                    font-size: 25px;
+                    font-weight: bold;
+                }
+                
+            }
+
+            .mainInfo{
+                display: flex;
+                flex-wrap: wrap;
+                width: 98%;
+                margin: 0 auto;
+                margin-top: 20px;
+                height:90px;
+                background-color: $secondary-green;
+
+                span{
+                    margin-left: 5px;
+                }
+
+                .famName, .tagId, .microchipNum, .policyNum{
+                    width: 20%;
+                    height: 20px;
+                    padding-left: 10px;
+                    background-color: transparent;
+                    border-left-width: 0px;
+                    border-top-width: 0px;
+                    border-right-width: 0px;
+                    font-weight: bold;
+                }
+            }
+               
+            .subInfo{
+                @extend .mainInfo;
+                display: flex;
+                flex-wrap: wrap;
+                height: 200px;
+
+                .leftside{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 49%; 
+                    
+                }
+                .rightside{
+                    display: flex;
+                    flex-wrap: wrap;
+                    border-left-width: 2px;
+                    border-left-color: black;
+                    border-left-style: solid;
+                    width: 50%
+                }
+                .height, .weight, .length, .collarColor, .furColors, .gender, .breed{
+                    @extend .famName;
+                    width: 20%;
+                }
+                span{
+                    margin-left: 5px;
+                }
+            }
+            .buttonsAndLogo{
+                @extend .mainInfo;
+                height: 200px;
+
+                .requestAppointment, 
+                    .requestRefill, 
+                    .emergancy, 
+                    .past, 
+                    .logout, 
+                    .account{
+                    width: 30%;
+                    margin: 5px;
+                    height: 40px;
+                    background-color: rgb(135, 160, 170);
+                }
+                .emergancy{
+                    background-color: rgb(221, 70, 70);
+                }
+                .logout{
+                    background-color: wheat;
+                }
+
+                .image{
+                    width: 100%;
+                }
+                .image > img{
+                    display: block;
+                    margin: 0 auto;
+                    height: 70px;
+                    width: 90px;
+                }
+                .image > div > p{
+                    margin: 0 auto;
+                    text-align: center;
+                    font-style: italic;
+                }
+            }
+            .darkenBackground{
+                position: absolute;
+                display: none;
+                z-index: 1;
+                height: 1100px;
+                margin-top: -900px;
+                left: 0;
+                opacity: 0.7;
+                width: 100%;
+                background-color: black;
+            }
+            .logoutPopup{
+                position: relative;
+                display: none;
+                z-index: 2;
+                text-align: center;
+                margin-top: -300px;
+                padding-top: 30px;
+                width: 100%;
+                height: 100px;
+                background-color: $primary-green;
+            }
+            
+
+            .yes, .no{
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+// TABLET's and MOBILE's
+@media screen 
+    and (min-width: 481px)
+    and (max-width: 768px){
+    body{
+        background-color: red;
+    }
+}
+
+// DESKTOP's
+@media screen 
+    and (min-width: 769px){
+    body{
+        background-color: green;
+    }
+}
