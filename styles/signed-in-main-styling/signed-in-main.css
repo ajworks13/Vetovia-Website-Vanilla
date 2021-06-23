@@ -201,10 +201,27 @@
   }
   .container .profile .newsPopUp .locationHours {
     margin-top: 30px;
+    height: 170px;
   }
   .container .profile .newsPopUp p:nth-child(1) {
     text-decoration: underline;
     font-weight: bold;
+  }
+  .container .profile .newsPopUp .newsImg {
+    width: 100%;
+  }
+  .container .profile .newsPopUp .newsImg > img {
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    width: 50px;
+    margin-top: -10px;
+  }
+  .container .profile .newsPopUp .newsImg > div > p {
+    margin: 0 auto;
+    text-align: center;
+    font-style: italic;
+    text-decoration: none;
   }
 }
 

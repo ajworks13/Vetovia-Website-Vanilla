@@ -28,6 +28,20 @@ function handleInfo(){
     return;
 }
 
+function display(){
+    let passwordInput = document.querySelector(".password");
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+    } else {
+        passwordInput.type = "password";
+    }
+}
+
+
+
+
+
+
 /*
     THIS PART IS FOR 'sign-up.html'
 */
