@@ -117,10 +117,10 @@
   .container .profile .buttonsAndLogo {
     height: 200px;
   }
-  .container .profile .buttonsAndLogo .requestAppointments,
+  .container .profile .buttonsAndLogo .appointments,
   .container .profile .buttonsAndLogo .requestRefill,
   .container .profile .buttonsAndLogo .emergancy,
-  .container .profile .buttonsAndLogo .past,
+  .container .profile .buttonsAndLogo .news,
   .container .profile .buttonsAndLogo .logout,
   .container .profile .buttonsAndLogo .account {
     width: 30%;
@@ -174,7 +174,7 @@
     text-decoration: none;
     color: black;
   }
-  .container .profile .requestAppointmentsPopUp, .container .profile .accountPopUp, .container .profile .pastAppointmentsPopUp, .container .profile .requestRefillPopUp {
+  .container .profile .appointmentsPopUp, .container .profile .accountPopUp, .container .profile .newsPopUp, .container .profile .requestRefillPopUp {
     position: relative;
     z-index: 2;
     display: none;
@@ -183,13 +183,28 @@
     padding-top: 30px;
     width: 100%;
     border: 1px solid black;
-    height: 300px;
+    height: 500px;
     background-color: #3ecc88;
   }
-  .container .profile .requestAppointmentsPopUp .goBack, .container .profile .accountPopUp .goBack, .container .profile .pastAppointmentsPopUp .goBack, .container .profile .requestRefillPopUp .goBack, .container .profile .requestAppointmentsPopUp .goBack2, .container .profile .accountPopUp .goBack2, .container .profile .pastAppointmentsPopUp .goBack2, .container .profile .requestRefillPopUp .goBack2, .container .profile .requestAppointmentsPopUp .goBack3, .container .profile .accountPopUp .goBack3, .container .profile .pastAppointmentsPopUp .goBack3, .container .profile .requestRefillPopUp .goBack3, .container .profile .requestAppointmentsPopUp .goBack4, .container .profile .accountPopUp .goBack4, .container .profile .pastAppointmentsPopUp .goBack4, .container .profile .requestRefillPopUp .goBack4 {
+  .container .profile .appointmentsPopUp .goBack, .container .profile .accountPopUp .goBack, .container .profile .newsPopUp .goBack, .container .profile .requestRefillPopUp .goBack, .container .profile .appointmentsPopUp .goBack2, .container .profile .accountPopUp .goBack2, .container .profile .newsPopUp .goBack2, .container .profile .requestRefillPopUp .goBack2, .container .profile .appointmentsPopUp .goBack3, .container .profile .accountPopUp .goBack3, .container .profile .newsPopUp .goBack3, .container .profile .requestRefillPopUp .goBack3, .container .profile .appointmentsPopUp .goBack4, .container .profile .accountPopUp .goBack4, .container .profile .newsPopUp .goBack4, .container .profile .requestRefillPopUp .goBack4 {
     position: absolute;
     left: 0;
     margin-left: 10px;
+  }
+  .container .profile .newsPopUp .theNews, .container .profile .newsPopUp .locationHours {
+    height: 150px;
+    width: 95%;
+    background-color: #acebc5;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 5px;
+  }
+  .container .profile .newsPopUp .locationHours {
+    margin-top: 30px;
+  }
+  .container .profile .newsPopUp p:nth-child(1) {
+    text-decoration: underline;
+    font-weight: bold;
   }
 }
 

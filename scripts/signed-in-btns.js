@@ -3,18 +3,18 @@ document.querySelector(".emergancy").onclick = function(){
     alert("This will call your pet's primary doctor's office \nor the doctor themselves.");
 }
 
-document.querySelector(".requestAppointments").onclick = function(){
+document.querySelector(".appointments").onclick = function(){
     
     let darkBackground = document.querySelector(".darkenBackground");
-    let requestAppointmentsPopUp = document.querySelector(".requestAppointmentsPopUp");
+    let appointmentsPopUp = document.querySelector(".appointmentsPopUp");
     let goBack = document.querySelector(".goBack");
 
     darkBackground.style.display = 'block';
-    requestAppointmentsPopUp.style.display = 'block';
+    appointmentsPopUp.style.display = 'block';
 
     goBack.onclick = function(){
         darkBackground.style.display = 'none';
-        requestAppointmentsPopUp.style.display = 'none';
+        appointmentsPopUp.style.display = 'none';
     }
    
 
@@ -35,18 +35,18 @@ document.querySelector(".requestRefill").onclick = function(){
    
 
 }
-document.querySelector(".past").onclick = function(){
+document.querySelector(".news").onclick = function(){
     
     let darkBackground = document.querySelector(".darkenBackground");
-    let pastAppointmentsPopUp = document.querySelector(".pastAppointmentsPopUp");
+    let newsPopUp = document.querySelector(".newsPopUp");
     let goBack3 = document.querySelector(".goBack3");
 
     darkBackground.style.display = 'block';
-    pastAppointmentsPopUp.style.display = 'block';
+    newsPopUp.style.display = 'block';
 
     goBack3.onclick = function(){
         darkBackground.style.display = 'none';
-        pastAppointmentsPopUp.style.display = 'none';
+        newsPopUp.style.display = 'none';
     }
    
 
