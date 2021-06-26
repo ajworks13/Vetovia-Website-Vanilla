@@ -114,6 +114,12 @@
   .container .profile .subInfo span {
     margin-left: 5px;
   }
+  .container .profile .desktopStatusArea {
+    display: none;
+  }
+  .container .profile .desktopNewsAndLocation {
+    display: none;
+  }
   .container .profile .buttonsAndLogo {
     height: 200px;
   }
@@ -225,15 +231,566 @@
   }
 }
 
+/*
+=========================================================================================
+=========================================================================================
+=========================================================================================
+=========================================================================================
+=========================================================================================
+=========================================================================================
+=========================================================================================
+=========================================================================================
+=========================================================================================
+=========================================================================================
+*/
 @media screen and (min-width: 481px) and (max-width: 768px) {
   body {
-    background-color: red;
+    background-color: orange;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .profile {
+    height: 900px;
+    width: 95%;
+    background-color: #3ecc88;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .container .profile .familyBackground {
+    width: 70%;
+    margin: 0 auto;
+    height: 150px;
+    background-color: #d6d6d6;
+    -webkit-box-shadow: 0px 0px 10px 2px black;
+            box-shadow: 0px 0px 10px 2px black;
+  }
+  .container .profile .familyBackground img {
+    height: 150px;
+    width: 100%;
+  }
+  .container .profile .familyBackground .petBackground {
+    position: absolute;
+    margin-top: -100px;
+    height: 80px;
+    width: 80px;
+    background-color: green;
+  }
+  .container .profile .familyBackground .petBackground img {
+    height: 80px;
+    width: 80px;
+  }
+  .container .profile .familyBackground .petsName {
+    position: relative;
+    margin-top: -50px;
+    height: 100px;
+  }
+  .container .profile .familyBackground span {
+    color: white;
+    text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+    margin-left: 100px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .container .profile .mainInfo, .container .profile .subInfo, .container .profile .buttonsAndLogo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 90px;
+    background-color: #acebc5;
+  }
+  .container .profile .mainInfo span, .container .profile .subInfo span, .container .profile .buttonsAndLogo span {
+    margin-left: 5px;
+  }
+  .container .profile .mainInfo .famName, .container .profile .subInfo .famName, .container .profile .buttonsAndLogo .famName, .container .profile .subInfo .height, .container .profile .subInfo .weight, .container .profile .subInfo .length, .container .profile .subInfo .collarColor, .container .profile .subInfo .furColors, .container .profile .subInfo .gender, .container .profile .subInfo .breed, .container .profile .mainInfo .tagId, .container .profile .subInfo .tagId, .container .profile .buttonsAndLogo .tagId, .container .profile .mainInfo .microchipNum, .container .profile .subInfo .microchipNum, .container .profile .buttonsAndLogo .microchipNum, .container .profile .mainInfo .policyNum, .container .profile .subInfo .policyNum, .container .profile .buttonsAndLogo .policyNum {
+    width: 20%;
+    height: 20px;
+    padding-left: 10px;
+    background-color: transparent;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    font-weight: bold;
+  }
+  .container .profile .subInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 200px;
+  }
+  .container .profile .subInfo .leftside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 49%;
+  }
+  .container .profile .subInfo .rightside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-left-width: 2px;
+    border-left-color: black;
+    border-left-style: solid;
+    width: 50%;
+  }
+  .container .profile .subInfo .height, .container .profile .subInfo .weight, .container .profile .subInfo .length, .container .profile .subInfo .collarColor, .container .profile .subInfo .furColors, .container .profile .subInfo .gender, .container .profile .subInfo .breed {
+    width: 20%;
+  }
+  .container .profile .subInfo span {
+    margin-left: 5px;
+  }
+  .container .profile .desktopStatusArea {
+    display: none;
+  }
+  .container .profile .desktopNewsAndLocation {
+    display: none;
+  }
+  .container .profile .buttonsAndLogo {
+    height: 200px;
+  }
+  .container .profile .buttonsAndLogo .appointments,
+  .container .profile .buttonsAndLogo .requestRefill,
+  .container .profile .buttonsAndLogo .emergancy,
+  .container .profile .buttonsAndLogo .news,
+  .container .profile .buttonsAndLogo .logout,
+  .container .profile .buttonsAndLogo .account {
+    width: 30%;
+    margin: 5px;
+    height: 40px;
+    background-color: #87a0aa;
+  }
+  .container .profile .buttonsAndLogo .emergancy {
+    background-color: #dd4646;
+  }
+  .container .profile .buttonsAndLogo .logout {
+    background-color: wheat;
+  }
+  .container .profile .buttonsAndLogo .image {
+    width: 100%;
+  }
+  .container .profile .buttonsAndLogo .image > img {
+    display: block;
+    margin: 0 auto;
+    height: 70px;
+    width: 90px;
+  }
+  .container .profile .buttonsAndLogo .image > div > p {
+    margin: 0 auto;
+    text-align: center;
+    font-style: italic;
+  }
+  .container .profile .darkenBackground {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    height: 1100px;
+    margin-top: -900px;
+    left: 0;
+    opacity: 0.7;
+    width: 100%;
+    background-color: black;
+  }
+  .container .profile .logoutPopup {
+    position: relative;
+    display: none;
+    z-index: 2;
+    text-align: center;
+    margin-top: -300px;
+    padding-top: 30px;
+    width: 100%;
+    height: 100px;
+    background-color: #3ecc88;
+  }
+  .container .profile .yes a, .container .profile .no a {
+    text-decoration: none;
+    color: black;
+  }
+  .container .profile .appointmentsPopUp, .container .profile .accountPopUp, .container .profile .newsPopUp, .container .profile .requestRefillPopUp {
+    position: relative;
+    z-index: 2;
+    display: none;
+    text-align: center;
+    margin-top: -600px;
+    padding-top: 30px;
+    width: 100%;
+    border: 1px solid black;
+    height: 500px;
+    background-color: #3ecc88;
+  }
+  .container .profile .appointmentsPopUp .goBack, .container .profile .accountPopUp .goBack, .container .profile .newsPopUp .goBack, .container .profile .requestRefillPopUp .goBack, .container .profile .appointmentsPopUp .goBack2, .container .profile .accountPopUp .goBack2, .container .profile .newsPopUp .goBack2, .container .profile .requestRefillPopUp .goBack2, .container .profile .appointmentsPopUp .goBack3, .container .profile .accountPopUp .goBack3, .container .profile .newsPopUp .goBack3, .container .profile .requestRefillPopUp .goBack3, .container .profile .appointmentsPopUp .goBack4, .container .profile .accountPopUp .goBack4, .container .profile .newsPopUp .goBack4, .container .profile .requestRefillPopUp .goBack4 {
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
+  }
+  .container .profile .newsPopUp .theNews, .container .profile .newsPopUp .locationHours {
+    height: 150px;
+    width: 95%;
+    background-color: #acebc5;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 5px;
+  }
+  .container .profile .newsPopUp .locationHours {
+    margin-top: 30px;
+    height: 170px;
+  }
+  .container .profile .newsPopUp p:nth-child(1) {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  .container .profile .newsPopUp .newsImg {
+    width: 100%;
+  }
+  .container .profile .newsPopUp .newsImg > img {
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    width: 50px;
+    margin-top: -10px;
+  }
+  .container .profile .newsPopUp .newsImg > div > p {
+    margin: 0 auto;
+    text-align: center;
+    font-style: italic;
+    text-decoration: none;
   }
 }
 
+/*
+=========================================================================================
+=========================================================================================
+=========================================================================================
+=========================================================================================
+=========================================================================================
+=========================================================================================
+=========================================================================================
+=========================================================================================
+=========================================================================================
+=========================================================================================
+*/
 @media screen and (min-width: 769px) {
   body {
     background-color: green;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 1300px;
+    width: 95%;
+    background-color: #3ecc88;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .container .profile .familyBackground {
+    width: 80%;
+    margin: 0 auto;
+    height: 150px;
+    background-color: #d6d6d6;
+    -webkit-box-shadow: 0px 0px 10px 2px black;
+            box-shadow: 0px 0px 10px 2px black;
+  }
+  .container .profile .familyBackground img {
+    height: 150px;
+    width: 100%;
+  }
+  .container .profile .familyBackground .petBackground {
+    position: absolute;
+    margin-top: -100px;
+    height: 80px;
+    width: 80px;
+    background-color: green;
+  }
+  .container .profile .familyBackground .petBackground img {
+    height: 80px;
+    width: 80px;
+  }
+  .container .profile .familyBackground .petsName {
+    position: relative;
+    margin-top: -50px;
+    height: 100px;
+  }
+  .container .profile .familyBackground span {
+    color: white;
+    text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+    margin-left: 100px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .container .profile #mainInfoOnly {
+    border: 1px solid red;
+    width: 20%;
+    height: 200px;
+    margin-right: 0px;
+  }
+  .container .profile .mainInfo, .container .profile .subInfo, .container .profile .buttonsAndLogo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 90px;
+    background-color: #acebc5;
+  }
+  .container .profile .mainInfo span, .container .profile .subInfo span, .container .profile .buttonsAndLogo span {
+    margin-left: 5px;
+  }
+  .container .profile .mainInfo .famName, .container .profile .subInfo .famName, .container .profile .buttonsAndLogo .famName, .container .profile .subInfo .height, .container .profile .subInfo .weight, .container .profile .subInfo .length, .container .profile .subInfo .collarColor, .container .profile .subInfo .furColors, .container .profile .subInfo .gender, .container .profile .subInfo .breed, .container .profile .mainInfo .tagId, .container .profile .subInfo .tagId, .container .profile .buttonsAndLogo .tagId, .container .profile .mainInfo .microchipNum, .container .profile .subInfo .microchipNum, .container .profile .buttonsAndLogo .microchipNum, .container .profile .mainInfo .policyNum, .container .profile .subInfo .policyNum, .container .profile .buttonsAndLogo .policyNum {
+    width: 20%;
+    height: 20px;
+    padding-left: 10px;
+    background-color: transparent;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    font-weight: bold;
+  }
+  .container .profile .subInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 200px;
+    margin-left: 5px;
+    width: 40%;
+    border: 1px solid yellow;
+  }
+  .container .profile .subInfo .leftside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 49%;
+  }
+  .container .profile .subInfo .rightside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-left-width: 2px;
+    border-left-color: black;
+    border-left-style: solid;
+    width: 30%;
+  }
+  .container .profile .subInfo .height, .container .profile .subInfo .weight, .container .profile .subInfo .length, .container .profile .subInfo .collarColor, .container .profile .subInfo .furColors, .container .profile .subInfo .gender, .container .profile .subInfo .breed {
+    width: 20%;
+  }
+  .container .profile .subInfo span {
+    margin-left: 5px;
+  }
+  .container .profile .desktopStatusArea {
+    background-color: #3ecc88;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 300px;
+    border: 1px solid red;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 80%;
+    -webkit-box-shadow: 1px 1px 20px 3px black inset;
+            box-shadow: 1px 1px 20px 3px black inset;
+  }
+  .container .profile .desktopStatusArea .status {
+    height: 250px;
+    width: 40%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+    background-color: #98ff98;
+    border-bottom-left-radius: 80px;
+  }
+  .container .profile .desktopStatusArea .personality {
+    height: 250px;
+    width: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+    border-top-right-radius: 80%;
+    border-bottom-right-radius: 30px;
+    background-color: #98ff98;
+  }
+  .container .profile .desktopNewsAndLocation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .container .profile .desktopNews, .container .profile .desktopLocationHours {
+    width: 45%;
+    margin: 5px;
+    padding-left: 10px;
+    border-left-width: 2px;
+    border-color: black;
+    border-left-style: solid;
+    border-right-width: 2px;
+    border-right-style: solid;
+  }
+  .container .profile .buttonsAndLogo {
+    margin-top: 20px;
+    height: 300px;
+  }
+  .container .profile .buttonsAndLogo .appointments,
+  .container .profile .buttonsAndLogo .requestRefill,
+  .container .profile .buttonsAndLogo .emergancy,
+  .container .profile .buttonsAndLogo .news,
+  .container .profile .buttonsAndLogo .logout,
+  .container .profile .buttonsAndLogo .account {
+    width: 49%;
+    margin: 5px;
+    height: 40px;
+    background-color: #87a0aa;
+  }
+  .container .profile .buttonsAndLogo .emergancy {
+    background-color: #dd4646;
+  }
+  .container .profile .buttonsAndLogo .logout {
+    background-color: wheat;
+  }
+  .container .profile .buttonsAndLogo .image {
+    width: 49%;
+    margin-top: -230px;
+  }
+  .container .profile .buttonsAndLogo .image > img {
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+  }
+  .container .profile .buttonsAndLogo .image > div > p {
+    margin: 0 auto;
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+  }
+  .container .profile .buttonsAndLogo .news {
+    display: none;
+  }
+  .container .profile .darkenBackground {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    height: 2500px;
+    margin-top: -900px;
+    left: 0;
+    opacity: 0.7;
+    width: 100%;
+    background-color: black;
+  }
+  .container .profile .logoutPopup {
+    position: relative;
+    display: none;
+    z-index: 2;
+    text-align: center;
+    margin-top: -300px;
+    padding-top: 30px;
+    width: 100%;
+    height: 100px;
+    background-color: #3ecc88;
+  }
+  .container .profile .yes a, .container .profile .no a {
+    text-decoration: none;
+    color: black;
+  }
+  .container .profile .appointmentsPopUp, .container .profile .accountPopUp, .container .profile .newsPopUp, .container .profile .requestRefillPopUp {
+    position: relative;
+    z-index: 2;
+    display: none;
+    text-align: center;
+    margin-top: -600px;
+    padding-top: 30px;
+    width: 100%;
+    border: 1px solid black;
+    height: 500px;
+    background-color: #3ecc88;
+  }
+  .container .profile .appointmentsPopUp .goBack, .container .profile .accountPopUp .goBack, .container .profile .newsPopUp .goBack, .container .profile .requestRefillPopUp .goBack, .container .profile .appointmentsPopUp .goBack2, .container .profile .accountPopUp .goBack2, .container .profile .newsPopUp .goBack2, .container .profile .requestRefillPopUp .goBack2, .container .profile .appointmentsPopUp .goBack3, .container .profile .accountPopUp .goBack3, .container .profile .newsPopUp .goBack3, .container .profile .requestRefillPopUp .goBack3, .container .profile .appointmentsPopUp .goBack4, .container .profile .accountPopUp .goBack4, .container .profile .newsPopUp .goBack4, .container .profile .requestRefillPopUp .goBack4 {
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
+  }
+  .container .profile .newsPopUp .theNews, .container .profile .newsPopUp .locationHours {
+    height: 150px;
+    width: 95%;
+    background-color: #acebc5;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 5px;
+  }
+  .container .profile .newsPopUp .locationHours {
+    margin-top: 30px;
+    height: 170px;
+  }
+  .container .profile .newsPopUp p:nth-child(1) {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  .container .profile .newsPopUp .newsImg {
+    width: 100%;
+  }
+  .container .profile .newsPopUp .newsImg > img {
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    width: 50px;
+    margin-top: -10px;
+  }
+  .container .profile .newsPopUp .newsImg > div > p {
+    margin: 0 auto;
+    text-align: center;
+    font-style: italic;
+    text-decoration: none;
   }
 }
 /*# sourceMappingURL=signed-in-main.css.map */
