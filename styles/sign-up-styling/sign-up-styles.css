@@ -30,7 +30,7 @@
     border-right-width: 0px;
     border-left-width: 0px;
   }
-  .container .createAccount {
+  .container .createAccountButton {
     width: 50%;
     height: 40px;
     margin-top: 20px;
@@ -42,13 +42,90 @@
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   body {
-    background-color: red;
+    background-color: #436083;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .clinicName, .container .clientLastName, .container .petName, .container .lastFour, .container .policyNumDiv, .container .microchipDiv, .container .tagIdDiv {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .container .clinic, .container .familyName, .container .pet, .container .fourDigits, .container .policyNum, .container .microchipNum, .container .tagId {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    height: 30px;
+    background-color: transparent;
+    border-bottom-color: black;
+    border-bottom-width: 3px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+  }
+  .container .createAccountButton {
+    width: 50%;
+    height: 40px;
+    margin-top: 20px;
+  }
+  .container p {
+    margin-top: 50px;
   }
 }
 
 @media screen and (min-width: 769px) {
   body {
-    background-color: green;
+    background-color: #436083;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+    -webkit-box-shadow: 1px 1px 111px 10px black;
+            box-shadow: 1px 1px 111px 10px black;
+  }
+  .container .clinicName, .container .clientLastName, .container .petName, .container .lastFour, .container .policyNumDiv, .container .microchipDiv, .container .tagIdDiv {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .container .clinic, .container .familyName, .container .pet, .container .fourDigits, .container .policyNum, .container .microchipNum, .container .tagId {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    height: 30px;
+    background-color: transparent;
+    border-bottom-color: black;
+    border-bottom-width: 3px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+  }
+  .container .createAccountButton {
+    width: 50%;
+    height: 40px;
+    margin-top: 20px;
+  }
+  .container p {
+    margin-top: 50px;
   }
 }
 /*# sourceMappingURL=sign-up-styles.css.map */

@@ -245,7 +245,7 @@
 */
 @media screen and (min-width: 481px) and (max-width: 768px) {
   body {
-    background-color: orange;
+    background-color: #436083;
   }
   .container {
     display: -webkit-box;
@@ -490,7 +490,7 @@
 */
 @media screen and (min-width: 769px) {
   body {
-    background-color: green;
+    background-color: #436083;
   }
   .container {
     display: -webkit-box;
@@ -529,8 +529,10 @@
             box-shadow: 0px 0px 10px 2px black;
   }
   .container .profile .familyBackground img {
+    display: block;
     height: 150px;
-    width: 100%;
+    width: 50%;
+    margin: 0 auto;
   }
   .container .profile .familyBackground .petBackground {
     position: absolute;

@@ -35,7 +35,7 @@
         .familyName, .pet, .fourDigits, .policyNum, .microchipNum, .tagId{
             @extend .clinic;
         }
-        .createAccount{
+        .createAccountButton{
             width: 50%;
             height: 40px;
             margin-top: 20px;
@@ -56,14 +56,53 @@
 
 
 
-
-
 // TABLET's and MOBILE's
 @media screen 
     and (min-width: 481px)
     and (max-width: 768px){
     body{
-        background-color: red;
+        background-color: $primary-blue;
+    }
+    .container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+        .clinicName{
+            margin-top: 50px;
+            width: 100%;
+        }
+        .clientLastName, .petName, .lastFour, .policyNumDiv, .microchipDiv, .tagIdDiv{
+            
+        }
+        
+        .clinic{
+            display: block;
+            margin: 0 auto;
+            width: 75%;
+            height: 30px;
+            background-color: transparent;
+            border-bottom-color: black;
+            border-bottom-width: 3px;
+            border-top-width: 0px;
+            border-right-width: 0px;
+            border-left-width: 0px;
+        }
+        .familyName, .pet, .fourDigits, .policyNum, .microchipNum, .tagId{
+            
+        }
+        .createAccountButton{
+            width: 50%;
+            height: 40px;
+            margin-top: 20px;
+        }
+        p{
+            margin-top: 50px;
+        }
+       
+
+       
+
     }
 }
 
@@ -71,6 +110,51 @@
 @media screen 
     and (min-width: 769px){
     body{
-        background-color: green;
+        background-color: $primary-blue;
+    }
+    .container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        width: 50%;
+        margin: 0 auto;
+        box-shadow: 1px 1px 111px 10px black;
+
+        .clinicName{
+            margin-top: 50px;
+            width: 100%;
+        }
+        .clientLastName, .petName, .lastFour, .policyNumDiv, .microchipDiv, .tagIdDiv{
+            
+        }
+        
+        .clinic{
+            display: block;
+            margin: 0 auto;
+            width: 75%;
+            height: 30px;
+            background-color: transparent;
+            border-bottom-color: black;
+            border-bottom-width: 3px;
+            border-top-width: 0px;
+            border-right-width: 0px;
+            border-left-width: 0px;
+        }
+        .familyName, .pet, .fourDigits, .policyNum, .microchipNum, .tagId{
+            
+        }
+        .createAccountButton{
+            width: 50%;
+            height: 40px;
+            margin-top: 20px;
+        }
+        p{
+            margin-top: 50px;
+        }
+       
+
+       
+
     }
 }

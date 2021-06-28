@@ -79,13 +79,160 @@
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   body {
-    background-color: red;
+    background-color: #436083;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container header {
+    color: white;
+    margin: 0 auto;
+    font-size: 30px;
+    margin-top: 100px;
+  }
+  .container form {
+    width: 75%;
+  }
+  .container .emailInputContainer {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .container .email, .container .password {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border-bottom-color: black;
+    border-bottom-width: 3px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+  }
+  .container .passwordInputContainer {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .container .passwordInputContainer .checkbox {
+    height: 20px;
+    width: 20px;
+  }
+  .container .passwordInputContainer span {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .container .signInButton {
+    display: block;
+    width: 50%;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .container .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-top: 60px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-weight: bold;
+  }
+  .container .links p {
+    margin-bottom: -2px;
+    font-style: italic;
+    font-weight: 400;
   }
 }
 
 @media screen and (min-width: 769px) {
   body {
-    background-color: green;
+    background-color: #436083;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid black;
+    width: 65%;
+    margin: 0 auto;
+    -webkit-box-shadow: 1px 1px 111px 10px black;
+            box-shadow: 1px 1px 111px 10px black;
+  }
+  .container header {
+    color: white;
+    margin: 0 auto;
+    font-size: 30px;
+    margin-top: 100px;
+  }
+  .container form {
+    width: 75%;
+  }
+  .container .emailInputContainer {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .container .email, .container .password {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: 30px;
+    background-color: transparent;
+    border-bottom-color: black;
+    border-bottom-width: 3px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+  }
+  .container .passwordInputContainer {
+    margin-top: 40px;
+  }
+  .container .passwordInputContainer i {
+    display: block;
+    text-align: center;
+  }
+  .container .signInButton {
+    display: block;
+    width: 40%;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .container .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 60px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-weight: bold;
+  }
+  .container .links p {
+    margin-bottom: -2px;
+    font-style: italic;
+    font-weight: 400;
   }
 }
 /*# sourceMappingURL=sign-in-styles.css.map */
