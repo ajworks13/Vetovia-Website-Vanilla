@@ -24,6 +24,7 @@
   .container .profile .familyBackground {
     width: 98%;
     margin: 0 auto;
+    margin-top: 15px;
     height: 150px;
     background-color: #d6d6d6;
     -webkit-box-shadow: 0px 0px 10px 2px black;
@@ -269,6 +270,7 @@
   .container .profile .familyBackground {
     width: 70%;
     margin: 0 auto;
+    margin-top: 20px;
     height: 150px;
     background-color: #d6d6d6;
     -webkit-box-shadow: 0px 0px 10px 2px black;
@@ -524,7 +526,8 @@
     width: 80%;
     margin: 0 auto;
     height: 150px;
-    background-color: #d6d6d6;
+    margin-top: 30px;
+    background-color: transparent;
     -webkit-box-shadow: 0px 0px 10px 2px black;
             box-shadow: 0px 0px 10px 2px black;
   }
