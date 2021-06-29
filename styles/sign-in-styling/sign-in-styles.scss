@@ -1,6 +1,10 @@
 @import '../variables';
 
 
+*{
+    font-family: Trebuchet MS1, Trebuchet MS, sans-serif;
+}
+
 // MOBILE
 @media screen and (max-width: 480px){
     body{

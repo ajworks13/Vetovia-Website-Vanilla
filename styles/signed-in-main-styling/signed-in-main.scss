@@ -1,5 +1,10 @@
 @import '../variables';
 
+*{
+    font-family: Trebuchet MS1, Trebuchet MS, sans-serif;
+}
+
+
 
 // MOBILE
 @media screen and (max-width: 480px){
@@ -735,6 +740,11 @@
                 border-left-style: solid;
                 border-right-width: 2px;
                 border-right-style: solid;
+                
+                p:nth-child(1){
+                    text-decoration: underline;
+                    font-weight: bold;
+                }
             }
 
             .desktopLocationHours{
